@@ -22,8 +22,14 @@ void girar(char matriu_clau[][6])
     {
         for (j = 0; j < 6; j++)
         {
-            matriu_clau[i][j] = matriu_clau[i][j+1];
-            printf("%c", matriu_clau[i][j]);
+
+            if (j+2 < 6)
+            {
+                matriu_clau[i][j] = matriu_clau[i][j+2];
+                printf("%c", matriu_clau[i][j]);
+            }
+            
+ 
         }
     }
 
